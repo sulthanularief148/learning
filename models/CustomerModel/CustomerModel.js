@@ -43,8 +43,8 @@ const CustomerSchema = sequelize.define(
 
 
 sequelize
-  .sync()
-  .then(() => {console.log(colorize("Your Customer schema was created successfully", "35"))})
-  .catch((error) => { ` Your Customer schema table creation Error is : ${console.error(error)}` })
+    .sync()
+    .then(() => { console.log(colorize("Your Customer schema was created successfully", "35")) })
+    .catch((error) => { ` Your Customer schema table creation Error is : ${console.error(error)}` })
 
-  module.exports = {CustomerSchema}
+module.exports = { CustomerSchema }
